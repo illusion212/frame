@@ -1,0 +1,15 @@
+server:
+  port: 8100
+
+spring:
+  profiles:
+    active: dev
+  #    active: test
+
+  application:
+    name: frame
+
+# mybatis ≈‰÷√
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.hjw.frame.business.pojo

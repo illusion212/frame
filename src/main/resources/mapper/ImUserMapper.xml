@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hjw.frame.business.mapper.ImUserMapper">
+  <resultMap id="BaseResultMap" type="com.hjw.frame.business.pojo.ImUser">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="pwd_hash" jdbcType="CHAR" property="pwdHash" />
+    <result column="salt" jdbcType="CHAR" property="salt" />
+    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="gmt_update" jdbcType="TIMESTAMP" property="gmtUpdate" />
+    <result column="deleted" jdbcType="BIT" property="deleted" />
+  </resultMap>
+  
+  <select id="getUser" resultType="ImUser">
+    select * from im_user
+    
+  </select>
+  
+</mapper>
