@@ -8,9 +8,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- * @author Created by ygdxd_admin at 2017-11-23 上午10:37
- */
 public class DateUtils {
 
 

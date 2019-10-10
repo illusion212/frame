@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 import tk.mybatis.spring.mapper.MapperScannerConfigurer;
 
 import java.util.Properties;
+import java.util.TimeZone;
 
 @SpringBootApplication
 public class FrameApplication {
@@ -29,5 +30,10 @@ public class FrameApplication {
         mapperScannerConfigurer.setProperties(properties);
         return mapperScannerConfigurer;
     }
+
+    //@Bean(name = "timeZone")
+    //public TimeZone china() {
+    //    return TimeZone.getTimeZone("GMT+8:00");
+    //}
 
 }

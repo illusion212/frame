@@ -1,7 +1,7 @@
 spring:
   # database
   datasource:
-    url: jdbc:mysql://localhost:3306/imdb?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://localhost:3306/imdb?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 

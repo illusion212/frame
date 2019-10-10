@@ -9,7 +9,33 @@ spring:
   application:
     name: frame
 
-# mybatis ����
+# mybatis 配置
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.hjw.frame.business.pojo
+
+#分页插件
+pagehelper:
+  helper-dialect: mysql
+  #分页合理化参数，默认值为false。当该参数设置为 true 时，pageNum<=0 时会查询第一页， pageNum>pages（超过总数时），会查询最后一页。
+  #默认false 时，直接根据参数进行查询。
+  reasonable: true
+  support-methods-arguments: true
+  params: count\=countSql
+
+#mapper配置
+mapper:
+  #normal：原值
+  #camelhump：驼峰转下划线,默认值
+  #uppercase：转换为大写
+  #lowercase：转换为小写
+  #camelhumpAndUppercase：驼峰转下划线大写形式
+  #camelhumpAndLowercase：驼峰转下划线小写形式
+  style: camelhumpanduppercase
+
+# 程序内日志显示级别
+logging:
+  level:
+    com:
+      joyware:
+        ims: info

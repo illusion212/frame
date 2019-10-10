@@ -9,21 +9,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
-/**     
- * 版权所有：2018-joyware
- * 项目名称：ims_m     
- *  
- * 类描述：自定义转换date类型  
- * 类名称：com.joyware.ims.util.Converter.typeConverter       
- * 创建人：JunWei.Hong 
- * 创建时间：2018-4-19 上午9:34:58     
- * 修改人：  
- * 修改时间：2018-4-19 上午9:34:58     
- * 修改备注：     
- * @version   V1.0      
- */  
-  
+/**
+ *  自定义转换date类型  
+ */
 public class typeConverter extends PropertyEditorSupport{
     
     Logger logger = LoggerFactory.getLogger(this.getClass());
