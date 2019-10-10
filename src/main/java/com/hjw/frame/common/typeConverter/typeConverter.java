@@ -14,7 +14,7 @@ import java.util.Date;
  */
 public class typeConverter extends PropertyEditorSupport{
     
-    Logger logger = LoggerFactory.getLogger(this.getClass());
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	@Override
 	public void setAsText(String text) throws IllegalArgumentException {

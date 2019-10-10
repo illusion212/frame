@@ -125,9 +125,11 @@
         </filter>
     </appender>
 
+    <!-- 将不需要的日志屏蔽-->
     <logger name="org.springframework" level="WARN" />
     <logger name="org.hibernate" level="WARN" />
     <logger name="org.apache.activemq" level="WARN" />
+    <logger name="com.zaxxer.hikari" level="WARN" />
 
     <!-- 生产环境下，将此级别配置为适合的级别，以免日志文件太多或影响程序性能 -->
     <root level="debug">

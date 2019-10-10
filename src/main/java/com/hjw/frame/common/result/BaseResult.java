@@ -40,6 +40,12 @@ public class BaseResult<T> {
         this.msg=SUCCESS_MESSAGE;
         this.data= (T) rspData;
     }
+    
+    public BaseResult(T data){
+        this.code= Consts.SUCCESS;
+        this.msg=SUCCESS_MESSAGE;
+        this.data= data;
+    }
 
     public BaseResult(int code, String url, String msg, T data) {
         this.code = code;
